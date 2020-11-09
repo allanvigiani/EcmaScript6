@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>ES6</title>
+</head>
+<body>
+   <script>
+      
+      class ContaBancaria {
+
+         constructor() {
+            this.agencia = 100
+            this.conta = 5350
+            this.saldo = 2280
+            this.limite = 6000
+         }
+
+         depositar(valorDeposito) {
+            this.saldo += valorDeposito
+         }
+
+         sacar(valorSacado) {
+            this.saldo -= valorSacado
+         }
+
+         consultarSaldo() {
+            return this.saldo
+         }
+
+      }
+   
+      let conta = new ContaBancaria()
+      let conta2 = new ContaBancaria()
+
+      console.log(conta.consultarSaldo())
+      conta.sacar(200)
+      console.log(conta.consultarSaldo())
+      conta.depositar(500)
+      console.log(conta.consultarSaldo())
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ES6</title>
+</head>
+<body>
+    <script>
+
+        //3 escopos: global, função e bloco
+
+        //global => uma variável pode ser acessada de qualquer lugar
+        //função => variável so pode ser acessada na função ou nos blocos dentro da função
+        //bloco (solto no escopo global) => variável sofre elevação pro escopo global (hoisting)
+
+        //var => sofre hoisting
+
+        //let => preserva o escopo de onde foi criada (não sofre hoisting)
+        //Pega o valor de fora, mas não pega de dentro
+
+        //const => não sofre alteração de valor. É captada de onde estiver
+
+        var serie = 'TWD' 
+        console.log(serie);
+
+        let filme = 'Homem Aranha'
+
+        const desenho = 'Bob Esponja'
+        console.log(desenho);
+
+        function x() {
+            var serie = 'Friends'
+            console.log(serie);
+
+            const desenho = 'Naruto'
+            if(true) {
+                console.log(serie);
+                console.log(desenho);
+            }
+        }
+
+        x();
+
+        if(true){
+            var serie = 'Game of Thrones' 
+            console.log(serie);
+            
+            let filme = 'Batman'
+            console.log(filme);
+            console.log(desenho);
+        }
+
+        console.log(serie);
+
+    </script>
+</body>
+</html>

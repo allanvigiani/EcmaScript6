@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>ES6</title>
+</head>
+<body>
+   <script>
+
+      // let square = function(x = 2) {   //FUNÇÃO ANONIMA
+      //    return x * x
+      // }
+
+      // document.write(square(4))
+
+      // let square = (x) => {
+      //    return x * x
+      // }
+
+      //Forma menos verbosa (return implícito)
+
+      //let square = x => x * x
+
+      //document.write(square(4))
+
+      let pairOrOdd = (number) => {
+         if (number % 2 == 1) {
+            return 'Odd'
+         }else {
+            return 'Pair'
+         } 
+      }
+
+      document.write(pairOrOdd(5))
+
+   </script>
+</body>
+</html>
