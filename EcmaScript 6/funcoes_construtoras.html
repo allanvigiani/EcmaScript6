@@ -9,35 +9,8 @@
 
    <script>
 
-      //Criar objetos através de funções construtoras
-      let Carro = function() {
-         this.cor = 'Azul'
-         this.modelo = 'Corsa'
-         this.velocidadeAtual = 20
-         this.velocidadeMaxima = 200
-
-         this.acelerar = function() {
-            //this.velocidadeAtual += 10
-            let velocidade = this.getVelocidadeAtual() + 10
-            this.setVelocidadeAtual(velocidade)
-         }
-
-         this.getVelocidadeAtual = function() {
-            return this.velocidadeAtual
-         }
-
-         this.setVelocidadeAtual = function(velocidadeAtual) {
-            this.velocidadeAtual = velocidadeAtual
-         }
-         
-      }
-
-      let carro = new Carro()
-
-      console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`)
-      carro.acelerar()
-      console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`)
-
+      
+      
    </script>
 </body>
 

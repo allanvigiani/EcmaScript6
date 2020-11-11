@@ -8,32 +8,33 @@
 <body>
    <script>
 
-      //Objeto Classe
+      //Objeto de Class
+      /*
       class Produto {
-
          constructor(descricao, preco) {
             this.descricao = descricao
             this.preco = preco
          }
-
          verDescricao() {
             console.log(`${this.descricao} por apenas ${this.preco}`)
          }
-
       }
-      
-      let produto = new Produto('Notebook', 2500)
-      produto.verDescricao()
 
-      //Objeto Literal
+      let produto = new Produto('Notebook', 2000) 
+      console.log(produto);
+      produto.verDescricao();
+      */
+
+      //Objeto literal
       let produtoLiteral = {
-         descricao: 'Carro',
-         preco: 16000,
-         verDescricao: function() {
-            console.log(`(Objeto Literal) ${this.descricao} por apenas ${this.preco}`)
+         descricao : 'Notebook',
+         preco : 2000,
+         verDescricao : function() {
+            console.log(`${this.descricao} por apenas ${this.preco}`)
          }
       }
 
+      console.log(produtoLiteral.preco)
       produtoLiteral.verDescricao()
 
    </script>
