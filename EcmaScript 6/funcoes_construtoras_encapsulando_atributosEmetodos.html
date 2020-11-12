@@ -9,6 +9,46 @@
 
    <script>
 
+      //Função construtora
+      let Carro = function() {
+         var velocidadeMaxima = 200
+         var kmRodados = 125
+
+         this.carro = 'Azul'
+         this.modelo = 'Fusion'
+         this.velocidade = 10
+         
+
+         this.acelerar = function() {
+            let velocidade = this.getVelocidadeAtual() + 50
+            if (velocidade > velocidadeMaxima) {
+               velocidade = velocidadeMaxima
+            }
+            this.setVelocidadeAtual(velocidade)
+
+            setKmRodados(10)            
+         }
+         this.getVelocidadeAtual = function() {
+            return this.velocidade
+         }
+         this.setVelocidadeAtual = function(velocidade) {
+            this.velocidade = velocidade
+         }
+
+         var setKmRodados = function(km) {
+            kmRodados += km
+         }
+      }
+
+      let carro = new Carro()
+      console.log(carro)
+
+      console.log(carro.velocidade)
+      carro.acelerar()
+      console.log(carro.velocidade)
+      carro.acelerar()
+      console.log(carro.velocidade)
+      
 
    </script>
 </body>

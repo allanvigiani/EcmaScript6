@@ -9,7 +9,31 @@
 
    <script>
 
-      
+      //Função construtora
+      let Carro = function() {
+         this.carro = 'Azul'
+         this.modelo = 'Fusion'
+         this.velocidade = 0
+         this.velocidadeMaxima = 200
+
+         this.acelerar = function() {
+            let velocidade = this.getVelocidadeAtual() + 5
+            this.setVelocidadeAtual(velocidade)
+         }
+         this.getVelocidadeAtual = function() {
+            return this.velocidade
+         }
+         this.setVelocidadeAtual = function(velocidade) {
+            this.velocidade = velocidade
+         }
+      }
+
+      let carro = new Carro()
+      carro.acelerar()
+      carro.acelerar()
+      carro.acelerar()
+      carro.acelerar()
+      console.log(carro.getVelocidadeAtual())
       
    </script>
 </body>
