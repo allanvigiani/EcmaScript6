@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>ES6</title>
+</head>
+
+<body>
+
+   <script>
+
+        //Spread => Espalha os dados dentro de outras estruturas
+        /*
+        //Arrays
+        let lista1 = ['Js' , 'HTML', 'CSS']
+        let lista2 = [...lista1, 'SQL', 'AWS']
+        console.log(lista2)
+
+        //Objetos
+        let pessoa = { nome: 'Allan', idade: 20 }
+        let clone = { endereco: 'Rua Tal', ...pessoa }
+
+        console.log(clone)
+        */
+
+        //Rest => Juntar estruturas de dados
+    function soma(...parametro) {
+        let resultado = 0
+
+        console.log(parametro)
+
+        parametro.forEach(v => resultado += v)
+
+        return resultado
+    }
+
+    console.log(soma(3, 8, 5, 7))
+
+   </script>
+</body>
+
+</html>

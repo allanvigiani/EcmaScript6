@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>ES6</title>
+</head>
+
+<body>
+
+   <script>
+
+            //Factory Functions
+            let Bicicleta = function(cor, marcha, aro) {
+                return {
+                    cor,
+                    marcha,
+                    aro,
+                    pedalar() {
+                        console.log('Pedalar')
+                    }
+                }
+            }
+
+            let bicicleta = Bicicleta('Preta', '18', 12)
+            console.log(bicicleta)
+
+   </script>
+</body>
+
+</html>
